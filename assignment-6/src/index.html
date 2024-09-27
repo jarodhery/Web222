@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=500, initial-scale=1" />
+    <meta name="author" content="Jarod Hery Chen" />
+    <title>WEB222 Games App</title>
+    <link rel="stylesheet" href="./css/water.css" />
+  </head>
+  <body>
+    <header>
+      <h1 style="color: #fff">Games Search API</h1>
+    </header>
+
+    <div class="controls">
+      <form>
+        <p>
+          <label for="search" style="color: #fff">Enter search term (required): </label>
+          <input type="text" id="search" class="search" required />
+        </p>
+        <p>
+          <button class="submit">Search</button>
+        </p>
+      </form>
+    </div>
+
+    <div class="pagination">
+      <button id="prevBtn" class="pagination-btn">Previous</button>
+      <button id="nextBtn" class="pagination-btn">Next</button>
+    </div>
+
+    <nav id="menu"></nav>
+    <hr />
+    <main>
+      <p id="selected-game"></p>
+      <table>
+        <thead></thead>
+        <tbody id="games">
+          <div id="flexCont"></div>
+        </tbody>
+      </table>
+    </main>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
